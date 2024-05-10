@@ -1,0 +1,62 @@
+
+.fa-envelope{
+
+    color: #81c408 !important;
+}
+
+
+.fa-map-marker{
+
+    color: #81c408 !important;
+
+
+}
+
+
+
+.fa-mobile{
+
+
+    color: #81c408 !important;
+}
+
+
+.payment-card{
+
+    width: 19%;
+    height: 100%;
+}
+
+.footer-z-index{
+
+    z-index: 600;
+}
+
+.btn{
+
+    background-color: rgba(108, 117, 125, 0.8) !important; 
+
+}
+
+
+
+
+@media screen and (max-width : 991px) {
+    .media-query-padding-top{
+
+        padding-top: 20px;
+    }
+}
+
+
+
+@media screen and (max-width : 768px) {
+    .center-media-query{
+
+        display: flex ;
+        justify-content: center;
+        
+    }
+}
+
+

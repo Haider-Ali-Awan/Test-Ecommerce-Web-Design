@@ -1,0 +1,26 @@
+.green-text{
+    color: #81c408;
+}
+
+body{
+
+    background-color:whitesmoke !important;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+.active-link{
+
+    background-color: rgba(1, 5, 3, 0.93);
+    color: white;
+    }
+
+    .active-link:hover{
+
+        background-color: #81c408;
+        color: white;
+    }

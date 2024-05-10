@@ -1,0 +1,29 @@
+.border-class{
+
+
+    border-left: 1px solid rgba(211, 211, 211, 0.5); /* Light grey transparent left border */
+    box-shadow: -1px 0 0px rgba(0, 0, 0, 0.1); /* Subtle shadow effect on the left side */
+   
+
+}
+
+
+
+.desh{
+
+    width: 80px;
+    height: 1px;
+    background-color: rgb(31, 209, 31);
+  }
+
+
+  .wrapper{
+
+    padding-top: 100px !important;
+  }
+
+
+  .padding-top-seventy{
+
+    padding-top: 70px;
+  }

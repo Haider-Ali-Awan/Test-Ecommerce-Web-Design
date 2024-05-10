@@ -1,0 +1,105 @@
+.carousel-item {
+    position: relative;
+  }
+
+  .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 10, 0.715), rgba(11, 126, 61, 0.774)); /* Gradient from yellowish to greenish */
+
+  }
+
+
+  .circle{
+
+    width: 25%;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white !important;
+  }
+
+
+  .carousel-caption {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    padding-left: 5%;
+    width: 70%;
+  }
+
+
+
+
+   .headphone-img{
+
+    width: 100%;
+   
+  } 
+
+ 
+ 
+  .fa-long-arrow-left{
+
+    font-size: 30px;
+    z-index: 10 !important;
+  }
+
+
+  .fa-long-arrow-right{
+
+    font-size: 30px;
+    z-index: 10 !important;
+  }
+
+
+  .carousel-control-prev .fa {
+    color: green !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adjust the shadow color and blur radius as needed */
+  }
+
+
+  .carousel-control-next .fa {
+    color: green !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Adjust the shadow color and blur radius as needed */
+  }
+
+
+
+
+
+  /* media query */
+
+  @media screen and (max-width : 1199px) {
+    .headphone-img{
+  
+      width: 60%;
+    }
+    }
+  
+  
+    @media screen and (max-width : 1199px) {
+      .d-block{
+  
+        min-height: 800px;
+  
+      }
+    
+      }
+  
+  
+  
+      @media screen and (max-width : 768px) {
+        .carousel-caption{
+    
+         width: 100%;
+         padding: 0px;
+    
+        }
+      
+        }

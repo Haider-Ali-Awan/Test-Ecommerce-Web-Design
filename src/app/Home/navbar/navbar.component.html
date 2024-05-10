@@ -1,0 +1,59 @@
+<!-- Navbar Starts -->
+
+<nav class="navbar navbar-light bg-light large-screen-navbar">
+    <div class="container-fluid pt-2 pb-2 ps-5 pe-5">
+        <a class="navbar-brand">
+            <img class="logo" src="https://tse1.mm.bing.net/th?id=OIP.pBlqTib0BvE6tlS1reZu0AHaHa&pid=Api&P=0&h=220"
+                alt="">
+        </a>
+        <div class="d-flex text-center align-items-center">
+            <a routerLink = "/home" routerLinkActive="active-link" [ngClass]="{'active-link': isActive('/home')}" type="button" style="width: 80px;"
+                class="btn fw-bold active  rounded-pill mx-3">Home</a>
+            <a routerLink = "/products" routerLinkActive="active-link" [ngClass]="{'active-link': isActive('/products')}" type="button" style="width: 80px;" class="btn fw-bold  rounded-pill mx-3">Product</a>
+            <a routerLink = "/pages" routerLinkActive="active-link" [ngClass]="{'active-link': isActive('/pages')}" type="button" style="width: 80px;" class="btn fw-bold  rounded-pill mx-3">Pages</a>
+            <a type="button" style="width: 80px;" class="btn fw-bold  rounded-pill mx-3">Gallery</a>
+            <a routerLink = "/blogs" routerLinkActive="active-link" [ngClass]="{'active-link': isActive('/blogs')}" type="button" style="width: 80px;" class="btn fw-bold  rounded-pill mx-3">Blog</a>
+            <i class="fa fa-search fs-4" aria-hidden="true"></i>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+<!-- for small Screen  -->
+
+<nav class="navbar navbar-light bg-light small-screen-navbar">
+    <div class="container-fluid pt-2 pb-2 ps-5 pe-5">
+        <a class="navbar-brand">
+            <img class="logo" src="https://tse1.mm.bing.net/th?id=OIP.pBlqTib0BvE6tlS1reZu0AHaHa&pid=Api&P=0&h=220"
+                alt="">
+        </a>
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" (click)="toggleSidebar()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Sidebar -->
+        <div [ngClass]="{'show': isSidebarOpen}" class="sidebar bg-dark position-fixed top-0 bottom-0 start-0 p-3">
+            <div class="text-end pt-2"><i (click)="toggleSidebar()" class="fa fa-times fs-3 text-white"
+                    aria-hidden="true"></i></div>
+
+            <!-- Your sidebar content here -->
+            <div class="d-flex flex-column justify-content-center align-items-center pt-3"> 
+                <button (click)="toggleSidebar()" routerLink = "/home" type="button" style="width: 100%"
+                    class="btn fw-bold text-white rounded-pill mx-4">Home</button>
+                <button (click)="toggleSidebar()" routerLink = "/products" type="button" style="width: 100%"
+                    class="btn fw-bold text-white  rounded-pill mx-4">Product</button>
+                <button (click)="toggleSidebar()" routerLink = "/pages" type="button" style="width: 100%"
+                    class="btn fw-bold text-white  rounded-pill mx-4">Pages</button> 
+                <button (click)="toggleSidebar()" type="button" style="width: 100%"
+                    class="btn fw-bold text-white  rounded-pill mx-4">Gallery</button> 
+                <button (click)="toggleSidebar()" routerLink = "/blogs" type="button" style="width: 100%"
+                    class="btn fw-bold text-white rounded-pill mx-4">Blog</button>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<!-- small Screen  -->
+

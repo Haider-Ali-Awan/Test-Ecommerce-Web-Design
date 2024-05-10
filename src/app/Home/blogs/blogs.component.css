@@ -1,0 +1,82 @@
+
+.desh{
+
+    width: 70px;
+    height: 1px;
+    background-color: #81c408 !important;
+  }
+
+
+  .card-title{
+
+    font-size: 14px;
+  }
+
+
+  .card-text{
+
+    font-size: 13px;
+  }
+
+
+  .wrapper{
+
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+
+  .btn {
+
+    background-color: #81c408;
+    color: white;
+  }
+
+
+  .card{
+    
+    width: 23rem;
+    border: none;
+    background-color: whitesmoke;
+    
+  }
+
+
+
+
+ 
+
+  .card-img-top{
+
+    height: 13rem;
+  }
+
+
+  .padding-top{
+
+
+    padding-top: 60px;
+  }
+
+
+
+
+  /* media query */
+
+  @media screen and (max-width : 1199px) {
+    
+    .media-query-card-three{
+
+       margin-top: 4%;
+    }
+
+    .media-query-card-two{
+
+        margin-top: 4%;
+     }
+
+     .media-query-card-one {
+
+        margin-top: 4%;
+     }
+  }

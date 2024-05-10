@@ -1,0 +1,278 @@
+<!-- Popular CAtegories Starts -->
+
+<div class="wrapper container-fluid">
+
+    <div class="row p-0 m-0">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 pt-5 ps-4 pe-4 pb-2 m-0">
+            <h4 class="fw-bold text-dark">POPULAR CATEGORIES</h4>
+            <ol style="list-style-type: none;" class="my-4">
+                <li (click)="filterProducts('All')" [ngClass]="{ 'green-text': isActive('All') }" class="my-4">All Products</li>
+                <li (click)="filterProducts('patrix')" [ngClass]="{ 'green-text': isActive('patrix') }" class="my-4">PATRIX PRODUCT</li>
+                <li (click)="filterProducts('smartwatch')" [ngClass]="{ 'green-text': isActive('smartwatch') }" class="my-4">SMARTWATCH PRODUCT</li>
+                <li (click)="filterProducts('speaker')" [ngClass]="{ 'green-text': isActive('speaker') }" class="my-4">SPEAKER PRODUCT</li>
+                <li (click)="filterProducts('led')" [ngClass]="{ 'green-text': isActive('led') }" class="my-4">LED PRODUCT</li>
+                <li (click)="filterProducts('carCharger')" [ngClass]="{ 'green-text': isActive('carCharger') }" class="my-4">CAR CHARGER PRODUCT</li>
+            </ol>
+            
+            
+            <button style="background-color: #81c408;" class="btn btn-success rounded-pill ms-4 ps-4 pe-4 pt-2 pb-2">Dummy One Two</button>
+        </div>
+    
+        <div class="col-xl-8 col-lg-8">
+            <div class="row">
+                <div *ngFor="let product of filteredProducts" class="col-xl-4 col-lg-4 col-md-6 col-sm-6 p-0 m-0 d-flex flex-column align-items-center text-center border-class pt-5 ps-4 pe-4 pb-2">
+                    <div>
+                        <img [src]="product.image" style="width: 200px;height: 200px;" alt="">
+                    </div>
+                    <div class="pt-3">
+                        <h5 class="fw-bold">{{ product.name }}</h5>
+                    </div>
+                    <div class="pt-2">
+                        <i class="fa fa-star green-text" aria-hidden="true"></i>
+                        <i class="fa fa-star green-text" aria-hidden="true"></i>
+                        <i class="fa fa-star green-text" aria-hidden="true"></i>
+                        <i class="fa fa-star green-text" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o green-text" aria-hidden="true"></i>
+                    </div>
+                    <p>{{ product.description }}</p>
+                    <p class="fw-bold">${{ product.price }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+<!-- popular categories end -->
+
+
+
+<!-- Collection Work Start -->
+
+
+<div class="wrapper">
+    <div class="row p-0 m-0">
+        <div class="col-md-6 p-0 m-0 gradient"
+            style="background-image: url('https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover;">
+            <div class="d-flex text-center align-items-center justify-content-center h-100">
+                <div class="text-white collection-content">
+                    <div>
+                        <h5>RELAX COLLECTION</h5>
+                    </div>
+
+                    <div>
+                        <h2 class="fw-bold">YOUR PERFECT SOUND</h2>
+                    </div>
+
+                    <div class="d-flex justify-content-center pt-4">
+                        <div class="desh">
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem non illum ipsum dolor
+                            sit amet consectetur</p>
+                    </div>
+
+
+                    <div class="pt-4">
+                        <button class="btn btn-dark rounded-pill pt-2 pb-2 ps-4 pe-4">
+                            Learn More
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 p-0 m-0 gradient"
+            style="background-image: url('https://images.pexels.com/photos/840996/pexels-photo-840996.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover;">
+            <div class="d-flex text-center align-items-center justify-content-center h-100">
+                <div class="text-white collection-content">
+                    <div>
+                        <h5>STREET COLLECTION</h5>
+                    </div>
+
+                    <div>
+                        <h2 class="fw-bold">NOISE IS NOT A PROBLEM</h2>
+                    </div>
+
+                    <div class="d-flex justify-content-center pt-4">
+                        <div class="desh">
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem non illum ipsum dolor
+                            sit amet consectetur</p>
+                    </div>
+
+
+                    <div class="pt-4">
+                        <button class="btn btn-dark rounded-pill ps-4 pe-4 pt-2 pb-2">
+                            Learn More
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- collection Work End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div
+class="col-xl-3 col-lg-3 col-md-6 col-sm-6 p-0 m-0 d-flex flex-column  align-items-center text-center border-class pt-5 ps-4 pe-4 pb-2">
+
+<div>
+
+    <div>
+        <img style="width: 200px;height: 200px;"
+            src="http://pngimg.com/uploads/headphones/headphones_PNG7647.png" alt="">
+    </div>
+
+    <div class="pt-5">
+        <h5 class="fw-bold">PATRIX PRODUCT SAMPLE</h5>
+    </div>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+</div>
+<div>
+    <p>
+        Experience crystal-clear sound quality with the Real Beat TRX headphones. These stylish headphones
+        are designed to deliver an immersive audio experience.
+    </p>
+</div>
+<div>
+    <p class="fw-bold">
+        $110.00
+    </p>
+</div>
+</div>
+
+<div
+class="col-xl-3 col-lg-3 col-md-6 col-sm-6 p-0 m-0 d-flex flex-column  align-items-center text-center border-class pt-5 ps-4 pe-4 pb-2">
+<div>
+    <div>
+        <img style="width: 200px;height: 200px;"
+            src="http://pngimg.com/uploads/headphones/headphones_PNG7647.png" alt="">
+    </div>
+
+    <div class="pt-5">
+        <h5 class="fw-bold">PATRIX PRODUCT SAMPLE</h5>
+    </div>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+</div>
+<div>
+    <p>
+        Experience crystal-clear sound quality with the Real Beat TRX headphones. These stylish headphones
+        are designed to deliver an immersive audio experience.
+    </p>
+</div>
+<div>
+    <p class="fw-bold">
+        $110.00
+    </p>
+</div>
+</div>
+
+<div
+class="col-xl-3 col-lg-3 col-md-6 col-sm-6 p-0 m-0 d-flex flex-column  align-items-center text-center border-class pt-5 ps-4 pe-4 pb-2">
+<div>
+
+    <div>
+        <img style="width: 200px;height: 200px;"
+            src="https://freepngimg.com/download/headphones/3-headphones-png-image.png" alt="">
+    </div>
+
+    <div class="pt-5">
+        <h5 class="fw-bold">PATRIX PRODUCT SAMPLE</h5>
+    </div>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+    <span>
+        <i class="fa fa-star green-text" aria-hidden="true"></i>
+
+    </span>
+</div>
+<div>
+    <p>
+        Experience crystal-clear sound quality with the Real Beat TRX headphones. These stylish headphones
+        are designed to deliver an immersive audio experience.
+    </p>
+</div>
+<div>
+    <p class="fw-bold">
+        $110.00
+    </p>
+</div>
+</div> -->
